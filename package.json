@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "build:css": "tailwindcss -i ./source/stylesheets/site.tailwind.css -o ./source/stylesheets/site.css"
+  }
+}
