@@ -731,10 +731,11 @@ h3 {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  flex-direction: column;
 }
 
 .sponsor-logo {
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 .sponsor-logo a {
