@@ -1,43 +1,161 @@
 ---
-title: Ruby Retreat 2024
+title: Ruby Retreat 2025
 description: "Ruby Retreat is a full weekend retreat for people interested in web development to gather and be awesome together. People attend for a variety of reasons: socializing, hacking, learning, teaching, gaming, and more."
 url: https://retreat.ruby.org.au
 image: https://retreat.ruby.org.au/images/social.jpg
 ---
 
-<div class='h-96 flex'>
-  <img src='/images/logo.png' class='h-full mx-auto'>
-</div>
+<!-- Hero Section with Left Logo Layout -->
+<section class="bg-[url('/images/cover.png')] bg-cover bg-center min-h-[22rem] text-center">
+  <div class="container mx-auto mt-0 pt-16 pb-40 h-full">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8h-full">
+      <!-- Left side: Logo and event details angled -->
+      <div class="flex">
+        <img src='/images/logo.png' class='h-64 block'>
 
-<div class="flex my-8">
-  <h1 class="mx-auto text-center">
-    October 18-21 2024<br>
-    Warra Gnan Coastal Camp<br>
-    Warrnambool, VIC
-  </h1>
-</div>
+        <div class="ml-6 xl:ml-12 flex-1 lg:flex-initial">
+          <div class="">
+            <h1 class="text-4xl font-bold text-emerald-900 mb-2 mt-6">
+              Ruby Retreat 2025
+            </h1>
+            <p class="text-lg md:text-xl text-emerald-800 font-semibold">
+              October 17-20th, 2025
+            </p>
+            <p class="text-base md:text-xl text-emerald-800">
+              Warra Gnan Coastal Camp<br>
+              Warrnambool, VIC
+            </p>
+          </div>
+        </div>
+      </div>
 
-<div class='flex'>
-  <div class='blurb mx-auto px-8'>
-    <div class="text-center mb-8">
-      <p>Ruby Retreat is a full weekend retreat for people interested in web development to gather and be awesome together. People attend for a variety of reasons: socializing, hacking, learning, teaching, gaming, and more. Though there is a focus on Ruby, we welcome anyone interested in programming or web technologies to join us.</p>
-    </div>
-
-    <div class="buy-tickets flex mb-8">
-      <a class="button mx-auto" id="buy_ticket" target="_blank" href="<%= ticket_url %>">Get your ticket →</a>
+      <!-- Right side: Blurb -->
+      <div class="flex items-center justify-center">
+        <div class="bg-emerald-100/90 p-6 rounded-2xl shadow-lg mt-6 lg:mt-0 lg:max-w-md">
+          <h2 class="text-lg font-bold text-emerald-900 mb-3">Join Us for an Amazing Weekend</h2>
+          <p class="text-emerald-800 mb-4">
+            Ruby Retreat is a full weekend retreat for people interested in web development to gather and be awesome
+            together. People attend for a variety of reasons: socializing, hacking, learning, teaching, gaming, and
+            more. Though there is a focus on Ruby, we welcome anyone interested in programming or web technologies to
+            join us.
+          </p>
+          <a class="inline-block bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300" id="buy_ticket" target="_blank" href="<%= ticket_url %>">
+            Get your ticket →
+          </a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 
+<!-- Pictures Section -->
+<section class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center text-emerald-900 mb-12">Retreat Highlights</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+        <%= image_tag 'slides/2.jpg', alt: 'A group of developers working outside', class: 'w-full h-64 object-cover' %>
+        <div class="p-4 bg-emerald-50">
+          <p class="text-emerald-800 text-center text-lg">Outdoor Coding! 👩‍💻</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+        <%= image_tag 'slides/5.jpg', alt: 'A group of people playing card games', class: 'w-full h-64 object-cover' %>
+        <div class="p-4 bg-emerald-50">
+          <p class="text-emerald-800 text-center text-lg">Gaming & Fun! 🕹️</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+        <%= image_tag 'slides/3.jpg', alt: 'A person swimming in a river', class: 'w-full h-64 object-cover' %>
+        <div class="p-4 bg-emerald-50">
+          <p class="text-emerald-800 text-center text-lg">Natural Beauty! 😍</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+        <%= image_tag 'slides/6.jpg', alt: 'A person pouring coffee into a cup', class: 'w-full h-64 object-cover' %>
+        <div class="p-4 bg-emerald-50">
+          <p class="text-emerald-800 text-center text-lg">Great Coffee! ☕️</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+        <%= image_tag 'slides/4.jpg', alt: 'A person smiling and giving the thumbs up', class: 'w-full h-64 object-cover' %>
+        <div class="p-4 bg-emerald-50">
+          <p class="text-emerald-800 text-center text-lg">Enthusiastic Encouragement! 👍</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+        <%= image_tag 'slides/1.jpg', alt: 'Two people smiling', class: 'w-full h-64 object-cover' %>
+        <div class="p-4 bg-emerald-50">
+          <p class="text-emerald-800 text-center text-lg">Community! 🥰</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+        <%= image_tag 'slides/7.jpg', alt: 'A person smiling', class: 'w-full h-64 object-cover' %>
+        <div class="p-4 bg-emerald-50">
+          <p class="text-emerald-800 text-center text-lg">Sunshine! ☀️</p>
+        </div>
+      </div>
+      <div class="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition duration-300">
+        <%= image_tag 'slides/8.jpg', alt: 'A person climbing a tree', class: 'w-full h-64 object-cover' %>
+        <div class="p-4 bg-emerald-50">
+          <p class="text-emerald-800 text-center text-lg">Adventure! 🌲</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<div class="blocks">
-  <%= partial 'parts/feature' %>
-  <%= partial 'parts/images', :locals => {:images => [[5, 'A group of people playing card games'], [3, 'A person swimming in a river'], ] } %>
-  <%= partial 'parts/the-venue' %>
-  <%= partial 'parts/images', :locals => {:images => [[2, 'A group of developers working outside'], [6, 'A person pouring coffee into a cup']] } %>
-  <%= partial 'parts/transport' %>
-  <%= partial 'parts/images', :locals => {:images => [[4, 'A person smiling and giving the thumbs up'], [1, 'Two people smiling']] } %>
-  <%= partial 'parts/faq' %>
-  <%= partial 'parts/images', :locals => {:images => [[7, 'A person smiling'], [8, 'A person climbing a tree']] } %>
-  <%= partial 'parts/sponsors' %>
-</div>
+<!-- Venue Section -->
+<section class="py-16 bg-gradient-to-r from-emerald-100 to-green-50">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h2 class="text-3xl font-bold text-emerald-900 mb-6">The Venue</h2>
+        <div class="space-y-4 text-emerald-800">
+          <p class="text-lg">
+            <a target="_blank" href="https://maps.app.goo.gl/dqC2XaLUVQwCA1e56" class="text-emerald-800 hover:text-emerald-800 font-semibold">
+              Warra Gnan Coastal Camp<br>
+              17 Stanley Street, Warrnambool, VIC, 3280
+            </a>
+          </p>
+          <p>
+            Located minutes from the beach and the town itself, Warra Gnan Coastal Camp has capacity for about 80
+            people.
+          </p>
+          <p>
+            You will arrive at the venue by riding the train over from Melbourne, or by driving. We will provide more
+            information on how to get there closer to the event.
+          </p>
+        </div>
+      </div>
+      <div class="text-center">
+        <%= image_tag 'house.jpeg', alt: 'Warra Gnan Coastal Camp', class: 'w-full rounded-lg shadow-lg' %>
+      </div>
+    </div>
+    
+    <!-- Google Maps Section -->
+    <div class="mt-12">
+      <h3 class="text-2xl font-bold text-center text-emerald-900 mb-6">Map</h3>
+      <div class="rounded-2xl overflow-hidden shadow-lg mx-auto max-w-8xl">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12508.26740914364!2d142.470648!3d-38.3960201!3m2!1i1024!2i768!4f10.5!3m3!1m2!1s0x6acd4d0b659f4fb5%3A0xcbf627db18a94dff!2sWarra%20Gnan%20Coastal%20Camp!5e0!3m2!1sen!2sau!4v1754796792036!5m2!1sen!2sau" 
+          width="100%" 
+          height="600"
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Transport Section -->
+<%= partial 'parts/transport' %>
+
+<!-- FAQ Section -->
+<%= partial 'parts/faq' %>
+
+<!-- Sponsors Section -->
+<%= partial 'parts/sponsors' %>

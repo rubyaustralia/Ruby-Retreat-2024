@@ -44,7 +44,7 @@ html,
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -89,7 +89,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -673,143 +673,5 @@ h3 {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-
-
-.mx-auto {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.heading {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-
-.link {
-  color: #0073e6;
-  text-decoration: none;
-}
-
-.link:hover {
-  text-decoration: underline;
-}
-
-.full-width {
-  width: 100%;
-  padding: 0 20px;
-}
-
-.content-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.sponsors-list {
-  width: 100%;
-}
-
-.sponsors-list hr {
-  border: none;
-  border-top: 2px solid #e0e0e0;
-  margin: 20px 0;
-}
-
-.sponsors-list h3 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.sponsors-tier {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  flex-direction: column;
-}
-
-.sponsor-logo {
-  margin: 5px 10px;
-}
-
-.sponsor-logo a {
-  display: inline-block;
-}
-
-.sponsor-logo img {
-  max-width: 100%;
-  height: auto;
-  display: inline-flex;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #fff;
-}
-
-.sponsor-logo img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.ruby-sponsors {
-  background-color: #ffe4e1;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.emerald-sponsors {
-  background-color: #ebfae0;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.sapphire-sponsors {
-  background-color: #e0f7fa;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.opal-sponsors {
-  background-color: #f3e5f5;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.amber-sponsors {
-  background-color: #fff3e0;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-.blurb {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.blurb .ruby-logo {
-  max-width: 150px;
-  height: auto;
-  display: block;
-  margin: 0 auto 10px;
-}
-
-.blurb p {
-  font-size: 1.2em;
-}
-
-@media (max-width: 600px) {
-  .sponsor-logo {
-      margin: 0;
-  }
-
-  .sponsor-logo img {
-      max-width: 80%;
   }
 }
