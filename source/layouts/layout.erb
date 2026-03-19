@@ -5,8 +5,22 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Use the title from a page's frontmatter if it has one -->
+    <%# Use the title from a page's frontmatter if it has one %>
     <title><%= current_page.data.title || "Middleman" %></title>
+
+    <%# SEO Meta Tags %>
+    <meta name="description" content="<%= current_page.data.description || 'Ruby Retreat - A weekend retreat for web developers' %>">
+    <link rel="canonical" href="<%= current_page.data.url || 'https://retreat.ruby.org.au' %>">
+
+    <%# Open Graph %>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= current_page.data.url || 'https://retreat.ruby.org.au' %>">
+    <meta property="og:title" content="<%= current_page.data.title || 'Ruby Retreat' %>">
+    <meta property="og:description" content="<%= current_page.data.description || 'Ruby Retreat - A weekend retreat for web developers' %>">
+    <meta property="og:image" content="<%= current_page.data.image || 'https://retreat.ruby.org.au/images/social.png' %>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="628">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
