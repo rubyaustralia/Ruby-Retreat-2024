@@ -1,5 +1,8 @@
 {
   "scripts": {
     "build:css": "tailwindcss -i ./source/stylesheets/site.tailwind.css -o ./source/stylesheets/site.css"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.2.4"
   }
 }
