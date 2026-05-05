@@ -33,7 +33,7 @@ page '/*.txt', layout: false
 
 helpers do
   def ticket_url
-    'https://ti.to/ruby-australia/ruby-retreat-2025'
+    'https://ti.to/ruby-australia/ruby-retreat-2026'
   end
 end
 
